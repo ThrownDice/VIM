@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/* Color Set
+----------------------------------
+black-strong: 303030
+black-light: 333
+green: 80BD01
+blue: 1474CC
+orange : FF8F00
+----------------------------------
+*/
+
+/* All Device */
+/*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+
+/* common for debugging */
+.border-gray {border: 1px solid ghostwhite;}
+.border-black {border: 1px solid black;}
+.border-blue {border: 1px solid blue;}
+.border-red {border: 1px solid red;}
+.border-green {border: 1px solid greenyellow;}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #333;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+
+.login {
+    background: url("../img/messenger.jpg") no-repeat;
+}
+
+.msg_container {
+    display: none;
+    width: 100%;
+    height: 90%;
+    font-family: 'Nanum Gothic Coding', monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+.msg_container .system {
+    width: 50%;
+    border-radius: 10px;
+    border: 0px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+}
+
+.msg_node {
+    margin: 10px;
+}
+
+.msg_node .header {
+    line-height: 35px;
+    font-size: 9pt;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+
+.msg_node .header img {
+    vertical-align: middle;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.msg_node .message {
+    font-size: 10pt;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.msg_node .message img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.my{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.my .message{
+    margin-left: 0px;
+    background: #80BD01;
+    text-align: left;
+}
+
+.my .header img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.usr_container {
+    display: none;
+}
+
+.chat {
+    display: none;
+    width: 100%;
+    height: 10%;
+    min-height: 70px;
+    line-height: 100%;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+    background : #303030;
+}
+
+.chat .btn {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: inline;
+    margin: auto;
+    height: 30px;
+    width: 60%;
+    min-width: 50px;
+    font-size: 10pt;
+    line-height: 30px;
+    padding: 5px;
+}
+
+.btn_container {
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.btn_container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 65px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.btn_container img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.btn_container input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input_container {
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.input_container textarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto auto 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color : black;
+    font-size: 10pt;
+    width: 98%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+/*.msg_node {
+    margin: 10px;
+}
+
+.msg_node .icon {
+    /!*float: left;*!/
+    margin-right: 10px;
+}
+
+.msg_node .icon img{
+    border-radius: 5px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.msg_node .contents {
+    float: left;
+    font-size: 10pt;
+}
+
+.msg_node .contents .header {
+    color: darkgray;
+    font-size: 9pt;
+}*/
+
+
+/* Mobile Device */
+/*768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.
+미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다.*/
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
+    /*사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
+
+    .msg_container {
+        width: 80%;
+        float: left;
+    }
+
+    .usr_container {
+        width: 20%;
+        height: 90%;
+        float: left;
+    }
+}
+
+/* Mobile */
+@media all and (max-width:768px) {
+}
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+    /*사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨.
+    아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.*/
+
+}
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+    /*사용자 해상도가 1025px 이상일 때 이 코드가 실행됨.
+    1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
+
+}
