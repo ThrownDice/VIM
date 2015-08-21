@@ -18,6 +18,7 @@
 			font-family: "돋움";
 			font-size: 0.9em;
 			color: #464646;
+			display : none;
 		}
 
 		.upload span {

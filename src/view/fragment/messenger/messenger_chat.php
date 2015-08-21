@@ -14,7 +14,7 @@
 		.chat {
 			margin: 0px auto;
 			width: 430px;
-
+			display : none;
 		}
 
 		.chat .header {
@@ -82,8 +82,8 @@
 		</div>
 	</div>
 	<div class="body">
-		<img src="view/img/messenger_segment1.png" alt="">
-		<img src="view/img/messenger_segment2.png" alt="">
+		<!--<img src="view/img/messenger_segment1.png" alt="">
+		<img src="view/img/messenger_segment2.png" alt="">-->
 	</div>
 	<div class="footer border-yellow">
 		<div class="send_box border-black">

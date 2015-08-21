@@ -62,7 +62,7 @@
 				<input type="password" name="password" placeholder="Password" class="password">
 			</div>
 			<div class="submit_box">
-				<a href="" class="btn_login">Log in</a>
+				<a class="btn_login">Log in</a>
 			</div>
 		</form>
 	</div>
