@@ -21,17 +21,18 @@
 			list-style: none;
 			text-decoration: none;
 			color: black;
+
 		}
 
 		.post_pane {
 			padding: 10px 0px;
-			width: 700px;
+			width: 610px;
 			float: right;
 		}
 
 		.new_post_box {
 			margin: 0px 0px 10px 0px;
-			width: 600px;
+			width: 500px;
 			background-color: white;
 		}
 
@@ -45,7 +46,7 @@
 		}
 
 		.new_post_box .content {
-			padding: 0px 0px;
+			padding: 5px 0px;
 		}
 
 		.new_post_box .person_box {
@@ -54,21 +55,29 @@
 		}
 
 		.new_post_box .text {
-			margin: 0px 0px 0px 10px;
-			padding: 0px 10px;
-			width: 450px;
-			height: 70px;
+			margin: 0px 0px 0px 5px;
+			padding: 0px 5px;
+			width: 400px;
+			height: 60px;
 			vertical-align: middle;
-			border: none;
+
 		}
 
 		.new_post_box .footer {
 			border-top: 1px solid darkgray;
+			padding: 5px 10px;
 		}
 
 		.post {
 			background-color: white;
 			width: 600px;
+		}
+
+		.btn_submit {
+			padding: 2px 16px;
+			background: #4b66a1;
+			color: white;
+			float: right;
 		}
 
 		.text-btn {
@@ -129,12 +138,11 @@
 				</div>
 			</div>
 			<div class="content">
-				<div class="person_box"><img src="view/img/fb_person.jpg" alt=""></div>
-				<input type="text" placeholder="What's on your mind?" class="text">
+				<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class="border-red"></div>
+				<input type="text" placeholder="What's on your mind?" class="text border-red">
 			</div>
 			<div class="footer">
-				<div class="btn_submit border-green">post</div>
-				<input type="submit" value="post" class="hide">
+				<button type="submit" class="btn_submit border-green">post</button>
 			</div>
 		</form>
 

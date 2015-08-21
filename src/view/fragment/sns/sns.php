@@ -21,7 +21,7 @@
 
 		.sns {
 			margin: 0px auto;
-			width: 900px;
+			width: 810px;
 			background-color: #e9eaed;
 		}
 
