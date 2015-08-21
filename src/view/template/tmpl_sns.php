@@ -18,7 +18,7 @@
 <body>
 	<!-- header
 	========================================-->
-	<div id="header" class="border-red">
+	<div id="header" class="">
 		<?php require_once VIEWPATH."fragment".DS."header_default.php"?>
 	</div>
 	<!-- //header
@@ -29,7 +29,7 @@
 	<div id="main">
 		<!-- screen
 		========================================-->
-		<div id="screen" class="border-red">
+		<div id="screen" class="">
 			<?php require_once VIEWPATH."fragment".DS."sns".DS."sns.php"?>
 		</div>
 		<!-- //screen

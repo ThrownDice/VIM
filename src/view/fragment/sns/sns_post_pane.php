@@ -12,7 +12,7 @@
 ?>
 <!-- content
 ========================================-->
-<div class="post_pane border-blue">
+<div class="post_pane">
 	<style scoped>
 		* {
 			margin: 0px;
@@ -21,6 +21,7 @@
 			list-style: none;
 			text-decoration: none;
 			color: black;
+			font-size: 0.99em;
 		}
 
 		.post_pane {
@@ -39,13 +40,29 @@
 		.new_post_box input {
 			border: none;
 		}
+
+		.new_post_box .btn_add_photo {
+			display: block;
+			float: left;
+			padding: 2px 0px;
+			color: #4b66a1;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.new_post_box .btn_add_photo:hover {
+			color: #4b66a1;
+			font-weight: bold;
+			background: #F4F5F3;
+
+		}
 		.new_post_box .header {
 			padding: 5px 10px;
 		}
 
 		.new_post_box .inner {
 			padding: 5px 0px;
-			border-bottom: 1px solid darkgray;
+			border-bottom: 1px solid #E1E1E1;
 		}
 
 
@@ -67,7 +84,7 @@
 		}
 
 		.new_post_box .footer {
-			border-top: 1px solid darkgray;
+			border-top: 1px solid #E1E1E1;
 			padding: 5px 10px;
 		}
 
@@ -82,13 +99,14 @@
 
 		.post {
 			background-color: white;
-			width: 500px;
+			width: 480px;
 			border-radius: 3px;
 			padding: 10px;
 		}
 
-		.post .header {
 
+		.post .body {
+			padding: 10px 0px;
 		}
 
 		.post .person_box {
@@ -102,8 +120,31 @@
 		}
 
 		.post .time {
-			color:
+			color: #A4A4A4;
 		}
+
+		.post .content {
+			padding: 20px 0;
+		}
+
+		.post .img {
+			padding: 10px 0;
+		}
+
+		.footer {
+			border-top: 1px solid #E1E1E1;
+			padding: 5px 0px;
+		}
+
+		.post .footer a {
+			display: block;
+			float: left;
+			margin-right: 20px;
+			font-weight: bold;
+			color: #999999;
+		}
+
+
 
 
 	</style>
@@ -113,7 +154,7 @@
 		<form action="" class="form_new_post">
 			<div class="header">
 				<div class="inner">
-					<div class="btn_add_photo">add photo</div>
+					<a class="btn_add_photo">add photo</a>
 				</div>
 			</div>
 			<div class="content">
@@ -128,17 +169,21 @@
 		
 	</div>
 <?php
+/**
+ * Uncomment
+ */
 //	$posts = $data["post_pane"];
 //	foreach($posts as $post) {
 //?>
 	<div class="post">
 		<div class="header">
 			<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class=""></div>
-			<div class="username">username</div>
-			<div class="time">time</div>
+			<div class="username"><!--<?=$post["author"]?>--></div>
+			<div class="time"><!--<?=$post["time"]?>--></div>
 		</div>
-		<div class="content">
-
+		<div class="body">
+			<div class="content"><!--<?=$post["content"]?>--></div>
+			<div class="img"><!--<?=$post["img"]?>--></div>
 		</div>
 		<div class="footer">
 			<a class="like">like</a>

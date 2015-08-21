@@ -10,7 +10,7 @@
 /**
  * Class Home
  */
-class Scanner extends Controller {
+class Validator extends Controller {
 
 	/**
 	 * Constructor.

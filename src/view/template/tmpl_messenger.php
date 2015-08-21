@@ -18,7 +18,7 @@
 <body>
 	<!-- header
 	========================================-->
-	<div id="header" class="border-red">
+	<div id="header" class="">
 		<?php require_once VIEWPATH."fragment".DS."header_default.php"?>
 	</div>
 	<!-- //header
@@ -26,10 +26,10 @@
 
 	<!-- main
 	========================================-->
-	<div id="main" class="border-red">
+	<div id="main" class="">
 		<!-- screen
 		========================================-->
-		<div id="screen" class="border-red">
+		<div id="screen" class="">
 			<?php require_once VIEWPATH."fragment".DS."messenger".DS."messenger.php"?>
 		</div>
 		<!-- //screen

@@ -10,7 +10,7 @@
 ?>
 <!-- content
 	========================================-->
-<div class="messenger border-black">
+<div class="messenger">
 	<style scoped>
 		* {
 			margin: 0px;

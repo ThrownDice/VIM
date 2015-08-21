@@ -57,6 +57,7 @@
 			background: #efefef;
 			padding: 5px;
 		}
+
 		a {
 			margin: 0px 30px 0px 0px;
 			padding: 3px 6px;
