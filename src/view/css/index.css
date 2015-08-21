@@ -32,7 +32,7 @@ body {
     background-color: #484848;
     height: 100%;
     color: white;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #header {
@@ -40,10 +40,11 @@ body {
 }
 
 #screen {
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 10px 0px;
     background: whitesmoke;
     color: black;
+    width: 950px;
 }
 
 .login {

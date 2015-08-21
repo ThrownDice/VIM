@@ -30,7 +30,7 @@
 		<!-- screen
 		========================================-->
 		<div id="screen" class="border-red">
-			<?php require_once VIEWPATH."fragment".DS."messenger.php"?>
+			<?php require_once VIEWPATH."fragment".DS."messenger".DS."messenger.php"?>
 		</div>
 		<!-- //screen
 		========================================-->

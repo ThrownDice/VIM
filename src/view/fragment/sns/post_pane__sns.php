@@ -26,7 +26,7 @@
 
 		.post_pane {
 			padding: 10px 0px;
-			width: 610px;
+			width: 550px;
 			float: right;
 		}
 
@@ -73,7 +73,7 @@
 			width: 600px;
 		}
 
-		.btn_submit {
+		.btn_post {
 			padding: 2px 16px;
 			background: #4b66a1;
 			color: white;
@@ -142,7 +142,7 @@
 				<input type="text" placeholder="What's on your mind?" class="text border-red">
 			</div>
 			<div class="footer">
-				<button type="submit" class="btn_submit border-green">post</button>
+				<button type="submit" class="btn_post border-green">post</button>
 			</div>
 		</form>
 

@@ -10,32 +10,27 @@
 ?>
 <!-- content
 	========================================-->
-<div class="sns border-black">
+<div class="messenger border-black">
 	<style scoped>
 		* {
+			margin: 0px;
+			padding: 0px;
 			overflow: hidden;
 			list-style: none;
 			text-decoration: none;
-			color: black;
 		}
 
-		.sns {
+		.messenger {
 			margin: 0px auto;
-			width: 745px;
-			background-color: #e9eaed;
+			width: auto;
+
 		}
 
 	</style>
 
-	<?php include VIEWPATH."fragment".DS."sns".DS."header_sns.php"?>
-
-	<!--
-		aside, content sit here.
-	-->
-
-	<?php include VIEWPATH."fragment".DS."sns".DS."aside_sns.php"?>
-	<?php include VIEWPATH."fragment".DS."sns".DS."post_pane__sns.php"?>
-
+	<?php require_once VIEWPATH."fragment".DS."messenger".DS."messenger_login.php"?>
+	<?php require_once VIEWPATH."fragment".DS."messenger".DS."messenger_chat.php"?>
+	<?php require_once VIEWPATH."fragment".DS."messenger".DS."messenger_upload.php"?>
 
 
 
