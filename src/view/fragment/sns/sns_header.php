@@ -21,6 +21,9 @@
 			list-style: none;
 			text-decoration: none;
 			color: white;
+			font-family: "tahoma";
+			font-size: 0.95em;
+			font-weight: bold;
 		}
 
 		.gnb {
@@ -38,7 +41,7 @@
 
 	</style>
 
-	<p class="username border-black">username</p>
+	<p class="username"><!-- username --></p>
 
 
 </div>

@@ -27,14 +27,16 @@
 
 	</style>
 
-	<?php include VIEWPATH."fragment".DS."sns".DS."header_sns.php"?>
+	<?php include VIEWPATH."fragment".DS."sns".DS."sns_header.php"?>
 
 	<!--
 		aside, content sit here.
 	-->
 
-	<?php include VIEWPATH."fragment".DS."sns".DS."aside_sns.php"?>
-	<?php include VIEWPATH."fragment".DS."sns".DS."post_pane__sns.php"?>
+
+	<?php include VIEWPATH."fragment".DS."sns".DS."sns_login.php"?>
+	<?php include VIEWPATH."fragment".DS."sns".DS."sns_aside.php"?>
+	<?php include VIEWPATH."fragment".DS."sns".DS."sns_post_pane.php"?>
 
 
 

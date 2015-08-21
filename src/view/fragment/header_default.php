@@ -12,7 +12,7 @@
 ?>
 <!-- gnb
 ========================================-->
-<div class="gnb border-blue">
+<div class="gnb">
 	<style scoped>
 		* {
 			margin: 0px;
@@ -32,15 +32,16 @@
 			width: 150px;
 			height: 60px;
 			float: left;
+			background: url("view/img/logo.png") no-repeat;
 		}
 
-		.gnb ul {
+		ul {
 			width: 600px;
 			height: 60px;
 			float: right;
 		}
 
-		.gnb li {
+		li {
 			margin: 0px 20px 0px 0px;
 			height: 60px;
 			display: block;
@@ -88,28 +89,16 @@
 			margin-left: 30px;
 		}
 
-		/*.btn {
-			font-family: 'Nanum Gothic Coding', monospace;
-			border-radius : 5px;
-			background-color : #1474CC;
-			margin: 10px;
-			text-align: center;
-			padding: 10px;
-			cursor: pointer;
-		}
 
-		.btn:hover {
-			background-color: #FF8F00;
-		}*/
 
 	</style>
-	<a href="/" class="logo border-gray">logo</a>
-	<ul class="border-green">
+	<a href="/" class="logo"></a>
+	<ul class="">
 		<li class=""><a href="/about" class="about text-btn">About</a></li>
-		<li class="border-gray"><a href="/sns" class="sns text-btn">SNS</a></li>
-		<li class="border-gray"><a href="/messenger" class="messenger text-btn">Messenger</a></li>
-		<li class="border-gray"><a href="/scanner" class="btn">Scanner</a></li>
-		<li class="border-gray"><a href="" class="ub text-btn">UB PRODUCT</a></li>
+		<li class=""><a href="/sns" class="sns text-btn">SNS</a></li>
+		<li class=""><a href="/messenger" class="messenger text-btn">Messenger</a></li>
+		<li class=""><a href="/scanner" class="btn">Validator</a></li>
+		<li class=""><a href="" class="ub text-btn">UB PRODUCT</a></li>
 	</ul>
 
 

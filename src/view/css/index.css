@@ -47,10 +47,6 @@ body {
     width: 950px;
 }
 
-.login {
-    background: url("../img/messenger.jpg") no-repeat;
-}
-
 .msg_container {
     display: none;
     width: 100%;
