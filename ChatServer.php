@@ -11,24 +11,60 @@ class ChatServer extends WebSocketServer {
     protected $CONNECTED_USR = array();
 
     protected function process ($user, $message) {
-        //$this->send($user,$message);
         echo "[INFO] : message received, ".$message;
-        $this->broadcast($message);
+        $message = json_decode($message);
+        try {
+            if(!empty($message)) {
+                if($message->type == "init") {
+
+                    $address = '';
+                    socket_getpeername($user->socket, $address);
+
+                    $user->user_info = $message->user_info;
+                    $user->ip = $address;
+                    $user->name = $message->name;
+
+                    //연결된 유저 추가
+                    array_push($this->CONNECTED_USR, $user);
+                } else {
+                    $this->broadcast($message);
+                }
+            }
+        } catch(Exception $e) {
+            print '[ERROR] process error, '.$e;
+        }
+
     }
 
     protected function connected ($user) {
-        //연결된 유저 추가
-        array_push($this->CONNECTED_USR, $user);
+
     }
 
     protected function broadcast($message) {
+        $IC = new ImageProcessor();
+        $response = array();
+        $response["type"] = $message->type;
+        $response["sender"] = $message->user_info;
         //접속한 모든 유저에게 메시지를 보내는 함수
         foreach($this->CONNECTED_USR as $node){
-            $this->send($node, $message);
+            if($message->type == "msg") {
+                $flag = rand(0, 2);
+                switch($flag) {
+                    case 0:
+                        $image_data = $IC->text2Image($message->text, $node->user_info);
+                        break;
+                    case 1:
+                        $image_data = $IC->text2Image($message->text, $node->ip);
+                        break;
+                    case 2:
+                        $image_data = $IC->text2Image($message->text, $node->name);
+                        break;
+                }
+                $response["img_type_white"] = base64_encode($image_data["white"]);
+                $response["img_type_yellow"] = base64_encode($image_data["yellow"]);
+            }
+            $this->send($node, json_encode($response));
         }
-
-        /*$address = '';
-        socket_getpeername($user->socket, $address);*/
     }
 
     protected function closed ($user) {

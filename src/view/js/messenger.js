@@ -15,10 +15,21 @@
                 websocket.onopen = function(message) {
                     $('.login').hide(0);
                     $('.chat').fadeIn(500);
+
+                    //초기 정보 전송
+                    var init_info = {
+                        user_info : email,
+                        name : 'LG CNS',
+                        type : 'init'
+                    };
+                    websocket.send(JSON.stringify(init_info));
+
+                    //핸들링
                     $('.btn_send').on('click', function() {
                         var text = $( '.send_box textarea' ).val();
                         var message = {
                             user_info : email,
+                            type : 'msg',
                             text : text
                         };
                         if(text) {
@@ -26,6 +37,7 @@
                             $( '.send_box textarea' ).val('');
                         }
                     });
+
                 };
 
                 websocket.onerror = function(message) {
@@ -33,7 +45,15 @@
                 };
 
                 websocket.onmessage = function(message) {
-
+                    var data = JSON.parse(message.data);
+                    var image_data;
+                    if(data.sender == email) {
+                        image_data = data.img_type_yellow;
+                    } else {
+                        image_data = data.img_type_white;
+                    }
+                    var html = '<img src="data:image/png;base64,' + image_data + '">';
+                    $('.body').append(html);
                 };
 
             }

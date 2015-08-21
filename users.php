@@ -15,6 +15,10 @@ class WebSocketUser {
   
   public $hasSentClose = false;
 
+  public $user_info = "";
+  public $ip;
+  public $name;
+
   function __construct($id, $socket) {
     $this->id = $id;
     $this->socket = $socket;

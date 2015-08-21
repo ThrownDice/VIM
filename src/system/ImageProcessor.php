@@ -413,7 +413,7 @@ class ImageProcessor {
         //텍스트 박스 출력
         $text_box_width = 260;
         $text_box_height = 13 * ( count($text_box) + 1);
-        $box_margin = 2;
+        $box_margin = 4;
 
         $this->ImageRectangleWithRoundedCorners($im_white, $box_margin + 0, $box_margin + 0, $text_box_width, $text_box_height, 5, $box_color_4_white);
         $this->ImageRectangleWithRoundedCorners($im_yellow, $image_width - ($box_margin + 0) - $text_box_width, $box_margin + 0, $image_width - ($box_margin + 0), $text_box_height, 5, $box_color_4_yellow);
@@ -427,7 +427,7 @@ class ImageProcessor {
         $signature_width = $signature_bound[4] + $signature_padding;
         $signature_x = $image_width - $signature_width;
         $signature_y = rand($signature_font_size, $image_height - $signature_font_size);
-        $rand_padding = rand(0, 10);
+        $rand_padding = rand(10, 50);
 
         // Determine Color by randomization.
         $color_val = rand(150,170);
@@ -442,7 +442,7 @@ class ImageProcessor {
 
         //텍스트 출력
         $line_num = 1;
-        $text_margin = 2;
+        $text_margin = 4;
         foreach($text_box as $line) {
             imagettftext($im_white, 10, 0, $text_margin + 1, $text_margin + 14 * $line_num, $text_color_4_white, $font, $line);
             imagettftext($im_yellow, 10, 0, $image_width - ($box_margin + 0) - $text_box_width + $text_margin + 1, $text_margin + 14 * $line_num++, $text_color_4_yellow, $font, $line);
