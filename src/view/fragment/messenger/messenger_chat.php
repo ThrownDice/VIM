@@ -11,10 +11,12 @@
 <!-- chat -->
 <div class="chat border-black">
 	<style scoped>
+		* {
+			font-family: "돋움";
+		}
 		.chat {
 			margin: 0px auto;
 			width: 430px;
-			display : none;
 		}
 
 		.chat .header {
@@ -75,23 +77,23 @@
 	</style>
 
 
-	<div class="header border-blue">
+	<div class="header">
 		<div class="username_box">
-			<p class="username border-green">홍길동</p>
-			<p class="status border-green">LG CNS HACKATHON</p>
+			<p class="username">홍길동</p>
+			<p class="status ">LG CNS HACKATHON</p>
 		</div>
 	</div>
 	<div class="body">
-		<!--<img src="view/img/messenger_segment1.png" alt="">
-		<img src="view/img/messenger_segment2.png" alt="">-->
+		<img src="view/img/messenger_segment1.png" alt="">
+		<img src="view/img/messenger_segment2.png" alt="">
 	</div>
-	<div class="footer border-yellow">
-		<div class="send_box border-black">
+	<div class="footer ">
+		<div class="send_box ">
 			<textarea class="input_text"></textarea>
-			<div class="btn_send border-yellow">send</div>
+			<div class="btn_send ">send</div>
 		</div>
 		<div class="submenu_box">
-			<i class="btn_select_file border-black"></i>
+			<i class="btn_select_file "></i>
 		</div>
 	</div>
 </div>

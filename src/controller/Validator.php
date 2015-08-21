@@ -21,7 +21,7 @@ class Validator extends Controller {
 
 	function main() {
 		$data = null;
-		$this->view->render("tmpl_scanner", $data);
+		$this->view->render("tmpl_validator", $data);
 	}
 
 	function doGet() {

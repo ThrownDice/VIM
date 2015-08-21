@@ -8,7 +8,7 @@
 ?>
 <!-- content
 	========================================-->
-<div class="content border-red">
+<div class="home">
 	<style scoped>
 		* {
 			overflow: auto;
@@ -17,7 +17,7 @@
 			color: white;
 		}
 
-		.content {
+		.home {
 			margin: 0px auto;
 			width: 100%;
 		}
@@ -53,7 +53,7 @@
 		phrase: 더 안심하고 웹을 이용할 수는 없을까?
 
 	-->
-	<div class="background border-blue">
+	<div class="background ">
 		<div class="title border-gray">더 안심하고 웹을 이용할 수는 없을까?</div>
 		<div class="subtitle border-gray">subtitle</div>
 

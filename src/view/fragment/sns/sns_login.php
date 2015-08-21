@@ -80,7 +80,7 @@
 		</form>
 	</div>
 	<div class="footer">
-		<a href="#" class="btn_login">login</a>
+		<a class="btn_login">login</a>
 	</div>
 
 </div>

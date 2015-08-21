@@ -25,12 +25,15 @@
 	// Set the view folder path.
 	define('VIEWPATH', 'view'.DS);
 
+	// Set the model folder path.
+	define('MODELPATH', 'model'.DS);
+
 
 /**
  * Define SPL autoload register.
  */
 	spl_autoload_register(function($class) {
-		$paths = array(SYSPATH, CTRPATH);
+		$paths = array(SYSPATH, CTRPATH, MODELPATH);
 
 		// Iterate over the paths set, and include if any file is detected.
 		foreach ($paths as $path) {

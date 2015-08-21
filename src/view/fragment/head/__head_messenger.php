@@ -24,4 +24,4 @@
 
     <!--index page script, css-->
     <link rel="stylesheet" href="view/css/index.css">
-    <script src="view/js/messenger.js"></script>
+    <script src="viewjs/index.js"></script>
