@@ -19,8 +19,11 @@ class Sns extends Controller {
 		parent::__construct();
 	}
 
+
+
 	function main() {
 		$data = null;
+		$model = new SNS_Model();
 		$this->view->render("tmpl_sns", $data);
 	}
 
