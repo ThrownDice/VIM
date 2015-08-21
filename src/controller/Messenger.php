@@ -20,7 +20,8 @@ class Messenger extends Controller {
 	}
 
 	function main() {
-		$this->view->render("tmpl_messenger");
+		$data = null;
+		$this->view->render("tmpl_messenger", $data);
 	}
 
 	function doGet() {

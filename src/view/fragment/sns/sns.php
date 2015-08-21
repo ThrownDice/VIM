@@ -10,31 +10,31 @@
 ?>
 <!-- content
 	========================================-->
-<div class="messenger border-red">
+<div class="sns border-black">
 	<style scoped>
 		* {
-			overflow: auto;
+			overflow: hidden;
 			list-style: none;
 			text-decoration: none;
-			color: white;
+			color: black;
 		}
 
-		.messenger {
+		.sns {
 			margin: 0px auto;
-			width: 100%;
+			width: 900px;
+			background-color: #e9eaed;
 		}
 
 	</style>
 
+	<?php include VIEWPATH."fragment".DS."sns".DS."header_sns.php"?>
+
 	<!--
-		background image: hacker, suggesting web spy.
-
-		phrase: 더 안심하고 웹을 이용할 수는 없을까?
-
+		aside, content sit here.
 	-->
-	sns
 
-
+	<?php include VIEWPATH."fragment".DS."sns".DS."aside_sns.php"?>
+	<?php include VIEWPATH."fragment".DS."sns".DS."post_pane__sns.php"?>
 
 
 

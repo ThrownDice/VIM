@@ -12,7 +12,7 @@
  */
 class View {
 
-	function render($file_template) {
+	function render($file_template, $data) {
 		require_once VIEWPATH."template".DS.$file_template.".php";
 	}
 }

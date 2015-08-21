@@ -12,14 +12,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-	<?php include VIEWPATH."fragment".DS."head".DS."__head_messenger.php"?>
+	<?php require_once VIEWPATH."fragment".DS."head".DS."__head_messenger.php"?>
 <title>Viewer Identifying Module</title>
 </head>
 <body>
 	<!-- header
 	========================================-->
-	<div id="header">
-		<?php include VIEWPATH."fragment".DS."header.php"?>
+	<div id="header" class="border-red">
+		<?php require_once VIEWPATH."fragment".DS."header_default.php"?>
 	</div>
 	<!-- //header
 	========================================-->
@@ -27,7 +27,13 @@
 	<!-- main
 	========================================-->
 	<div id="main" class="border-red">
-		<?php include VIEWPATH."fragment".DS."messenger.php"?>
+		<!-- screen
+		========================================-->
+		<div id="screen" class="border-red">
+			<?php require_once VIEWPATH."fragment".DS."messenger.php"?>
+		</div>
+		<!-- //screen
+		========================================-->
 	</div>
 	<!-- //main
 	========================================-->

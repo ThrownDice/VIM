@@ -13,14 +13,14 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<?php include VIEWPATH."fragment".DS."head".DS."__head_default.php"?>
+	<?php require_once VIEWPATH."fragment".DS."head".DS."__head_default.php"?>
     <title>Viewer Identifying Module</title>
 </head>
 <body>
 	<!-- header
 	========================================-->
 	<div id="header">
-		<?php include VIEWPATH."fragment".DS."header.php"?>
+		<?php require_once VIEWPATH."fragment".DS."header_default.php"?>
 	</div>
 	<!-- //header
 	========================================-->
@@ -28,12 +28,18 @@
 	<!-- main
 	========================================-->
 	<div id="main">
-		<?php include VIEWPATH."fragment".DS."content.php"?>
+		<?php require_once VIEWPATH."fragment".DS."content.php"?>
 	</div>
 	<!-- //main
 	========================================-->
 
-
+	<!-- footer
+	========================================-->
+	<div id="footer" class="border-red">
+		footer
+	</div>
+	<!-- //footer
+	========================================-->
 
 </body>
 </html>

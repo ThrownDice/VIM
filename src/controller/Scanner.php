@@ -20,7 +20,8 @@ class Scanner extends Controller {
 	}
 
 	function main() {
-		$this->view->render("tmpl_scanner");
+		$data = null;
+		$this->view->render("tmpl_scanner", $data);
 	}
 
 	function doGet() {

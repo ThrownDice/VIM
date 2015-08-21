@@ -20,7 +20,8 @@ class About extends Controller {
 	}
 
 	function main() {
-		$this->view->render("tmpl_about");
+		$data = null;
+		$this->view->render("tmpl_about", $data);
 	}
 
 	function doGet() {

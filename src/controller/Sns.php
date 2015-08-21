@@ -20,7 +20,8 @@ class Sns extends Controller {
 	}
 
 	function main() {
-		$this->view->render("tmpl_sns");
+		$data = null;
+		$this->view->render("tmpl_sns", $data);
 	}
 
 	function doGet() {

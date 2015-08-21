@@ -20,7 +20,8 @@ class Home extends Controller {
 	}
 
 	function main() {
-		$this->view->render("tmpl_default");
+		$data = null;
+		$this->view->render("tmpl_default", $data);
 	}
 
 	function doGet() {

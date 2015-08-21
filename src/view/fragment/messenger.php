@@ -18,11 +18,14 @@
 			overflow: hidden;
 			list-style: none;
 			text-decoration: none;
-			color: white;
+			color: black;
+
 		}
 
 		.messenger {
-			margin: 0px auto;
+			margin: 30px auto;
+			padding: 20px 0px;
+			background: whitesmoke;
 
 		}
 
@@ -119,13 +122,6 @@
 
 	</style>
 
-	<!--
-		background image: hacker, suggesting web spy.
-
-		phrase: 더 안심하고 웹을 이용할 수는 없을까?
-
-	-->
-
 
 	<!-- login -->
 	<div class="login border-green hide">
@@ -154,7 +150,7 @@
 
 
 	<!-- chat -->
-	<div class="chat border-gray">
+	<div class="chat border-black">
 		<div class="header border-blue">
 			<p class="user border-green">상대자 이름</p>
 			<p class="status border-green">status message</p>
