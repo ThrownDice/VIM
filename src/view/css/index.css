@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);*/
 /* Color Set
 ----------------------------------
 black-strong: 303030
@@ -19,6 +19,9 @@ orange : FF8F00
 .border-blue {border: 1px solid blue;}
 .border-red {border: 1px solid red;}
 .border-green {border: 1px solid greenyellow;}
+.border-yellow {border: 1px solid #FFF980;}
+
+.hide {display: none;}
 
 
 html {
@@ -106,34 +109,6 @@ body {
 
 .usr_container {
     display: none;
-}
-
-.chat {
-    display: none;
-    width: 100%;
-    height: 10%;
-    min-height: 70px;
-    line-height: 100%;
-    position: fixed;
-    top: 100%;
-    transform: translateY(-100%);
-    background : #303030;
-}
-
-.chat .btn {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: inline;
-    margin: auto;
-    height: 30px;
-    width: 60%;
-    min-width: 50px;
-    font-size: 10pt;
-    line-height: 30px;
-    padding: 5px;
 }
 
 .btn_container {

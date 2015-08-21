@@ -26,7 +26,7 @@
 
 	<!-- main
 	========================================-->
-	<div id="main">
+	<div id="main" class="border-red">
 		<?php include VIEWPATH."fragment".DS."messenger.php"?>
 	</div>
 	<!-- //main
