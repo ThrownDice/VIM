@@ -37,6 +37,7 @@
 		.file_box {
 			padding: 10px 0px;
 			border-bottom: 1px solid #DEDEDE;
+			text-align: center;
 		}
 
 		.file_box .btn_select_file {
@@ -120,7 +121,6 @@
 	<form method="post" class="form_upload">
 		<div class="file_box">
 			<a class="btn_select_file"></a>
-			<p class="filename ">filename</p>
 			<input type="file" name="file" class="">
 		</div>
 		<div class="protect_box">

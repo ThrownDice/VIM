@@ -36,13 +36,18 @@ class Messenger extends Controller {
 				$password = $_POST["pw"];
 				$image_data = $IC->inject($file_path, $signature, $password);
 				$im = imagecreatefromstring($image_data);
+				imagealphablending($im, true);
+				imagesavealpha($im, true);
 				$file_path = $file_path.'mod';
 				imagepng($im, $file_path);
 				imagedestroy($im);
 			} else {
-				$signature = $_POST["user_info"];
+				$signature = $_POST["signature"];
+				if(empty($signature)) $signature = $_POST["user_info"];
 				$image_data = $IC->inject($file_path, $signature);
 				$im = imagecreatefromstring($image_data);
+				imagealphablending($im, true);
+				imagesavealpha($im, true);
 				$file_path = $file_path.'mod';
 				imagepng($im, $file_path);
 				imagedestroy($im);

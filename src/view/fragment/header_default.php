@@ -112,7 +112,7 @@
 	</style>
 	<a href="/" class="logo"></a>
 	<ul class="">
-		<li class=""><a href="/about" class="about text-btn">About</a></li>
+		<li class=""><a href="/about" class="about text-btn"></a></li>
 		<li class=""><a href="/sns" class="sns text-btn">SNS</a></li>
 		<li class=""><a href="/messenger" class="messenger text-btn">Messenger</a></li>
 		<li class=""><a href="/validator" class="btn">Validator</a></li>

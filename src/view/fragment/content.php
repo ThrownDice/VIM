@@ -8,13 +8,14 @@
 ?>
 <!-- content
 	========================================-->
-<div class="content border-red">
+<div class="content">
 	<style scoped>
 		* {
 			overflow: auto;
 			list-style: none;
 			text-decoration: none;
 			color: white;
+			font-family: "돋움";
 		}
 
 		.content {
@@ -23,25 +24,23 @@
 		}
 
 		.background {
+			margin: 20px 0;
 			height: 500px;
-
+			background: url("view/img/background.jpg") no-repeat;
+			background-size: 100%;
 		}
 
 		.title {
 			margin: 0px auto;
 			position: relative;
 			top: 60%;
-			width: 80%;
+			width: 90%;
 			text-align: center;
+			font-size: 3.5em;
+			font-weight: bolder;
 		}
 
-		.subtitle {
-			margin: 0px auto;
-			position: relative;
-			top: 70%;
-			width: 80%;
-			text-align: center;
-		}
+
 
 
 
@@ -53,10 +52,8 @@
 		phrase: 더 안심하고 웹을 이용할 수는 없을까?
 
 	-->
-	<div class="background border-blue">
-		<div class="title border-gray">더 안심하고 웹을 이용할 수는 없을까?</div>
-		<div class="subtitle border-gray">subtitle</div>
-
+	<div class="background">
+		<div class="title">더 안심하고 소통할 수는 없을까?</div>
 	</div>
 
 

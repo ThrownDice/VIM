@@ -9,7 +9,7 @@
  */
 ?>
 <!-- chat -->
-<div class="chat border-black">
+<div class="chat">
 	<style scoped>
 		.chat {
 			margin: 0px auto;
@@ -25,6 +25,7 @@
 		.chat .username_box {
 			margin: 10px 0px 0px 10px;
 			width: 180px;
+			font-size : 10pt;
 		}
 
 
@@ -58,10 +59,12 @@
 		}
 
 		.btn_send {
-			height: 55px;
+			height: 57px;
+			border-radius: 3px;
 			background: #ffec42;
 			text-align: center;
 			line-height: 55px;
+			font-size : 10pt;
 		}
 
 		.chat .submenu_box {
@@ -74,26 +77,47 @@
 			width: 23px;
 			height: 23px;
 		}
+
+		.node {
+			font-size: 10pt;
+		}
+
+		.node img {
+			border-radius : 5px;
+			margin : 5px 0px 0px 5px;
+		}
+
+		.my .node_header {
+			text-align: right;
+			margin-right: 10px;
+		}
+
+		.my .node_contents img{
+			float: right;
+			margin-right: 10px;
+		}
+
+
 	</style>
 
 
-	<div class="header border-blue">
+	<div class="header">
 		<div class="username_box">
-			<p class="username border-green">홍길동</p>
-			<p class="status border-green">LG CNS HACKATHON</p>
+			<p class="username">홍길동</p>
+			<p class="status">LG CNS HACKATHON</p>
 		</div>
 	</div>
-	<div class="body">
+	<div class="body" style="position: relative;overflow: hidden;">
 		<!--<img src="view/img/messenger_segment1.png" alt="">
 		<img src="view/img/messenger_segment2.png" alt="">-->
 	</div>
-	<div class="footer border-yellow">
-		<div class="send_box border-black">
-			<textarea class="input_text"></textarea>
-			<div class="btn_send border-yellow">send</div>
+	<div class="footer">
+		<div class="send_box">
+			<textarea class="input_text" style="margin-right:3px"></textarea>
+			<div class="btn_send">send</div>
 		</div>
 		<div class="submenu_box">
-			<i class="btn_select_file border-black"></i>
+			<i class="btn_select_file"></i>
 		</div>
 	</div>
 </div>
