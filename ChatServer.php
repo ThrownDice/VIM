@@ -3,7 +3,8 @@
 // Run from command prompt > php -q websocket.demo.php
 
 // Basic WebSocket demo echoes msg back to client
-include 'lib/websockets.php';
+include 'websockets.php';
+include 'src/system/ImageProcessor.php';
 
 class ChatServer extends WebSocketServer {
 
@@ -16,15 +17,8 @@ class ChatServer extends WebSocketServer {
     }
 
     protected function connected ($user) {
-        $response = array();
-        $response["status"] = "connected";
-        $response["text"] = "환영합니다";
-        $response["type"] = "system";
-
         //연결된 유저 추가
         array_push($this->CONNECTED_USR, $user);
-
-        $this->send($user, json_encode($response));
     }
 
     protected function broadcast($message) {
@@ -32,6 +26,9 @@ class ChatServer extends WebSocketServer {
         foreach($this->CONNECTED_USR as $node){
             $this->send($node, $message);
         }
+
+        /*$address = '';
+        socket_getpeername($user->socket, $address);*/
     }
 
     protected function closed ($user) {
