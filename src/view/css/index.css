@@ -171,30 +171,7 @@ body {
     border: 0px;
 }
 
-/*.msg_node {
-    margin: 10px;
-}
 
-.msg_node .icon {
-    /!*float: left;*!/
-    margin-right: 10px;
-}
-
-.msg_node .icon img{
-    border-radius: 5px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-
-.msg_node .contents {
-    float: left;
-    font-size: 10pt;
-}
-
-.msg_node .contents .header {
-    color: darkgray;
-    font-size: 9pt;
-}*/
 
 
 /* Mobile Device */

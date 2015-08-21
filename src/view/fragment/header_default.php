@@ -21,6 +21,7 @@
 			list-style: none;
 			text-decoration: none;
 			color: white;
+			font-family:"verdana";
 		}
 
 		.gnb {
@@ -59,7 +60,6 @@
 			padding : 10px;
 			width: auto;
 			height : auto;
-			border:1px solid #2D79B2;
 			line-height : 40px;
 			text-align : center;
 			-webkit-border-radius : 5px;
@@ -85,8 +85,26 @@
 			cursor : pointer;
 		}
 
+		.btn:hover {
+			border: none;
+			vertical-align: middle;
+			background: #D50055;
+			font-size: 1.0em;
+			margin: 10px;
+			padding : 0px 10px;
+			width: auto;
+			height : 40px;
+			line-height : 40px;
+			text-align : center;
+			-webkit-border-radius : 5px;
+			-moz-border-radius : 5px;
+			border-radius : 5px;
+			cursor : pointer;
+		}
+
 		.ub {
 			margin-left: 30px;
+
 		}
 
 
@@ -97,8 +115,8 @@
 		<li class=""><a href="/about" class="about text-btn">About</a></li>
 		<li class=""><a href="/sns" class="sns text-btn">SNS</a></li>
 		<li class=""><a href="/messenger" class="messenger text-btn">Messenger</a></li>
-		<li class=""><a href="/scanner" class="btn">Validator</a></li>
-		<li class=""><a href="" class="ub text-btn">UB PRODUCT</a></li>
+		<li class=""><a href="/validator" class="btn">Validator</a></li>
+		<li class=""><a class="ub text-btn">UB PRODUCT</a></li>
 	</ul>
 
 

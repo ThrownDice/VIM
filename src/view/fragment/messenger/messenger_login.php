@@ -10,7 +10,7 @@
 ?>
 
 <!-- login -->
-<div class="login border-green">
+<div class="login">
 	<style scoped>
 		.login {
 			margin: 0px auto;
@@ -51,7 +51,7 @@
 	</style>
 
 
-	<div class="form_box border-black">
+	<div class="form_box">
 		<form action="" class="form_login">
 			<div class="email_box">
 				<label for="email"></label>
@@ -62,7 +62,7 @@
 				<input type="password" name="password" placeholder="Password" class="password">
 			</div>
 			<div class="submit_box">
-				<a href="" class="btn_login">Log in</a>
+				<a class="btn_login">Log in</a>
 			</div>
 		</form>
 	</div>
