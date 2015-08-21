@@ -30,6 +30,7 @@
 		}
 
 		.btn_login {
+			display: block;
 			background-color: #ccc;
 			-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
@@ -40,6 +41,7 @@
 			text-decoration: none;
 			cursor: pointer;
 			border:none;
+			text-align: center;
 		}
 
 		.submit_box {
@@ -60,8 +62,7 @@
 				<input type="password" name="password" placeholder="Password" class="password">
 			</div>
 			<div class="submit_box">
-				<label for="submit"></label>
-				<input type="submit" value="login" placeholder="Password" class="btn_login">
+				<a href="" class="btn_login">Log in</a>
 			</div>
 		</form>
 	</div>

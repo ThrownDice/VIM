@@ -24,11 +24,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="header_default.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="header_default.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/fragment/header_default.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.59946597">
-                  <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+                <state vertical-scroll-proportion="-5.109756">
+                  <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -86,11 +86,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="messenger_login.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="messenger_login.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/view/fragment/messenger/messenger_login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.0">
-                  <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.31226766">
+                  <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -151,8 +151,8 @@
           <file leaf-file-name="sns_post_pane.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/fragment/sns/sns_post_pane.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.625">
-                  <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+                <state vertical-scroll-proportion="-13.125">
+                  <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -286,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/js/index.js" />
         <option value="$PROJECT_DIR$/backup/index.php" />
         <option value="$PROJECT_DIR$/core/Vim.php" />
         <option value="$PROJECT_DIR$/chat.php" />
@@ -327,7 +326,6 @@
         <option value="$PROJECT_DIR$/view/fragment/scanner.php" />
         <option value="$PROJECT_DIR$/view/fragment/messenger.php" />
         <option value="$PROJECT_DIR$/view/template/tmpl_messenger.php" />
-        <option value="$PROJECT_DIR$/view/fragment/messenger/messenger_login.php" />
         <option value="$PROJECT_DIR$/view/fragment/sns/post_pane__sns.php" />
         <option value="$PROJECT_DIR$/view/fragment/messenger/messenger_chat.php" />
         <option value="$PROJECT_DIR$/view/fragment/messenger/messenger.php" />
@@ -337,6 +335,8 @@
         <option value="$PROJECT_DIR$/view/fragment/sns/sns_header.php" />
         <option value="$PROJECT_DIR$/view/fragment/sns/sns_login.php" />
         <option value="$PROJECT_DIR$/view/fragment/header_default.php" />
+        <option value="$PROJECT_DIR$/view/fragment/sns/sns_post_pane.php" />
+        <option value="$PROJECT_DIR$/view/fragment/messenger/messenger_login.php" />
       </list>
     </option>
   </component>
@@ -1080,22 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/fragment/sns/sns_post_pane.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.625">
-          <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/fragment/messenger/messenger_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/fragment/sns/sns_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -1122,8 +1106,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/fragment/header_default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59946597">
-          <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+        <state vertical-scroll-proportion="-5.109756">
+          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/fragment/sns/sns_post_pane.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/fragment/messenger/messenger_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31226766">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
           <folding />
         </state>
       </provider>

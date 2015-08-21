@@ -21,7 +21,6 @@
 			list-style: none;
 			text-decoration: none;
 			color: black;
-
 		}
 
 		.post_pane {
@@ -34,16 +33,21 @@
 			margin: 0px 0px 10px 0px;
 			width: 500px;
 			background-color: white;
+			border-radius: 3px;
 		}
 
+		.new_post_box input {
+			border: none;
+		}
 		.new_post_box .header {
 			padding: 5px 10px;
 		}
 
 		.new_post_box .inner {
 			padding: 5px 0px;
-			border-bottom: 1px solid gray;
+			border-bottom: 1px solid darkgray;
 		}
+
 
 		.new_post_box .content {
 			padding: 5px 0px;
@@ -56,11 +60,10 @@
 
 		.new_post_box .text {
 			margin: 0px 0px 0px 5px;
-			padding: 0px 5px;
+			padding: 0px 5px 0 0;
 			width: 400px;
 			height: 60px;
 			vertical-align: middle;
-
 		}
 
 		.new_post_box .footer {
@@ -68,69 +71,45 @@
 			padding: 5px 10px;
 		}
 
-		.post {
-			background-color: white;
-			width: 600px;
-		}
-
 		.btn_post {
 			padding: 2px 16px;
 			background: #4b66a1;
 			color: white;
 			float: right;
-		}
-
-		.text-btn {
-			vertical-align: middle;
-			font-size: 1.0em;
-			margin: 0px;
-			padding : 10px;
-			width: auto;
-			height : auto;
-			border:1px solid #2D79B2;
-			line-height : 40px;
-			text-align : center;
-			-webkit-border-radius : 5px;
-			-moz-border-radius : 5px;
-			border-radius : 5px;
-			cursor : pointer;
-		}
-
-		.btn {
-			border: none;
-			vertical-align: middle;
-			background: #BB004A;
-			font-size: 1.0em;
-			margin: 10px;
-			padding : 0px 10px;
-			width: auto;
-			height : 40px;
-			line-height : 40px;
-			text-align : center;
-			-webkit-border-radius : 5px;
-			-moz-border-radius : 5px;
-			border-radius : 5px;
-			cursor : pointer;
-		}
-
-		/*.btn {
-			font-family: 'Nanum Gothic Coding', monospace;
-			border-radius : 5px;
-			background-color : #1474CC;
-			margin: 10px;
-			text-align: center;
-			padding: 10px;
+			border:none;
 			cursor: pointer;
 		}
 
-		.btn:hover {
-			background-color: #FF8F00;
-		}*/
+		.post {
+			background-color: white;
+			width: 500px;
+			border-radius: 3px;
+			padding: 10px;
+		}
+
+		.post .header {
+
+		}
+
+		.post .person_box {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.post .username {
+			color: #4b66a1;
+			font-weight: bold;
+		}
+
+		.post .time {
+			color:
+		}
+
 
 	</style>
 
 
-	<div class="new_post_box border-blue">
+	<div class="new_post_box">
 		<form action="" class="form_new_post">
 			<div class="header">
 				<div class="inner">
@@ -138,11 +117,11 @@
 				</div>
 			</div>
 			<div class="content">
-				<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class="border-red"></div>
-				<input type="text" placeholder="What's on your mind?" class="text border-red">
+				<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class=""></div>
+				<input type="text" placeholder="What's on your mind?" class="text">
 			</div>
 			<div class="footer">
-				<button type="submit" class="btn_post border-green">post</button>
+				<a class="btn_post">post</a>
 			</div>
 		</form>
 
@@ -152,8 +131,20 @@
 //	$posts = $data["post_pane"];
 //	foreach($posts as $post) {
 //?>
-	<div class="post border-blue">
-		post content
+	<div class="post">
+		<div class="header">
+			<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class=""></div>
+			<div class="username">username</div>
+			<div class="time">time</div>
+		</div>
+		<div class="content">
+
+		</div>
+		<div class="footer">
+			<a class="like">like</a>
+			<a class="comment">comment</a>
+			<a class="share">share</a>
+		</div>
 	</div>
 <?//
 //	}
