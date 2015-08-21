@@ -29,13 +29,25 @@
 
 		.title {
 			padding: 10px 0;
-			border-bottom: 1px solid #F3F3F3;
+			border-bottom: 1px solid #F7F7F7;
 			font-weight: bold;
 			color: #F3F3F3
 		}
 
+		.file_box {
+			padding: 5px 0;
+		}
+
+		.file_box input {
+			display: block;
+			padding: 10px 0;
+
+
+		}
 		.pw_box {
-			margin: 10px auto;
+			margin: 5px auto;
+			padding: 5px 0;
+
 		}
 
 		.pw_box a {
@@ -57,11 +69,11 @@
 			color: #333;
 		}
 
-		input {
+		.pw_box input {
 			margin: 5px 0;
 			display: block;
 			padding: 3px;
-			width: 300px;
+			width: 200px;
 			color: #333;
 		}
 
@@ -80,6 +92,10 @@
 	</style>
 
 	<div class="title">파일에 삽입된 서명을 추출합니다</div>
+	<div class="file_box">
+		<label for="">파일경로</label>
+		<input type="file">
+	</div>
 	<div class="pw_box ">
 		<label for="">비밀번호를 입력하세요.</label>
 		<input type="password">
