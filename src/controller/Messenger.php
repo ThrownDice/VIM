@@ -20,8 +20,38 @@ class Messenger extends Controller {
 	}
 
 	function main() {
-		$data = null;
-		$this->view->render("tmpl_messenger", $data);
+
+		if(strtolower($_SERVER["REQUEST_METHOD"]) == "get") {
+			$data = null;
+			$this->view->render("tmpl_messenger", $data);
+		} else {
+			$IC = new ImageProcessor();
+			$file_path = $IC->uploadImage();
+
+			$response = array();
+
+			$protect = isset($_POST["protect"]) ? $_POST["protect"] : null;
+			if( $protect == 'on' ){
+				$signature = $_POST["signature"];
+				$password = $_POST["pw"];
+				$image_data = $IC->inject($file_path, $signature, $password);
+				$im = imagecreatefromstring($image_data);
+				$file_path = $file_path.'mod';
+				imagepng($im, $file_path);
+				imagedestroy($im);
+			} else {
+				$signature = $_POST["user_info"];
+				$image_data = $IC->inject($file_path, $signature);
+				$im = imagecreatefromstring($image_data);
+				$file_path = $file_path.'mod';
+				imagepng($im, $file_path);
+				imagedestroy($im);
+			}
+			$response["status"] = "success";
+			$response["file"] = $file_path;
+			echo json_encode($response);
+		}
+
 	}
 
 	function doGet() {

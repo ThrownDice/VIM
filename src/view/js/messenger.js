@@ -10,7 +10,6 @@
             var wsUri = "ws://localhost:9000/ChatServer.php";
             var websocket = new WebSocket(wsUri);
             var email = $('.email_box .email').val();
-
             if(email) {
                 websocket.onopen = function(message) {
                     $('.login').hide(0);
@@ -38,6 +37,37 @@
                         }
                     });
 
+                    $('.btn_upload').on('click', function() {
+
+                        $('.form_upload .user_info').val(email);
+                        var fd = new FormData($('.form_upload')[0]);
+
+                        $.ajax({
+                            url: '/messenger',
+                            type: 'post',
+                            processData: false,
+                            contentType: false,
+                            data: fd
+                        }).done(function( data ) {
+                            console.log(data);
+                            var result = JSON.parse( data );
+                            if(result.status === 'success' ) {
+                                var message = {
+                                    user_info : email,
+                                    type : 'img',
+                                    file : result.file
+                                };
+                                websocket.send(JSON.stringify(message));
+                                $('.upload').hide(0);
+                                $('.chat').fadeIn(500);
+                            } else {
+                                console.log('upload fail');
+                            }
+                        }).fail(function( data) {
+                            console.log('upload fail');
+                        });
+                    });
+
                 };
 
                 websocket.onerror = function(message) {
@@ -46,14 +76,20 @@
 
                 websocket.onmessage = function(message) {
                     var data = JSON.parse(message.data);
-                    var image_data;
-                    if(data.sender == email) {
-                        image_data = data.img_type_yellow;
-                    } else {
-                        image_data = data.img_type_white;
+                    if(data.type == 'msg') {
+                        var image_data;
+                        if(data.sender == email) {
+                            image_data = data.img_type_yellow;
+                        } else {
+                            image_data = data.img_type_white;
+                        }
+                        var html = '<img src="data:image/png;base64,' + image_data + '">';
+                        $('.body').append(html);
+                    } else if(data.type == 'img') {
+                        var image_data = data.img;
+                        var html = '<img src="data:image/png;base64,' + image_data + '">';
+                        $('.body').append(html);
                     }
-                    var html = '<img src="data:image/png;base64,' + image_data + '">';
-                    $('.body').append(html);
                 };
 
             }
@@ -64,35 +100,7 @@
             $('.upload').fadeIn(500);
         });
 
-        $('.btn_upload').on('click', function() {
-
-            var fd = new FormData($('.fm_chat')[0]);
-
-            $.ajax({
-                url: '/messenger?action=upload'
-                type: 'post',
-                processData: false,
-                contentType: false,
-                data: fd
-            }).done(function( data ) {
-
-                var result = JSON.parse( data );
-                if(result.status === 'success' ) {
-
-
-                } else {
-                    console.log('upload fail');
-                }
-
-            }).fail(function( data) {
-                console.log('upload fail');
-            });
-
-
-
-        });
-
-        $('.msg_container').perfectScrollbar();
+        //$('.chat .body').perfectScrollbar();
 
     });
 

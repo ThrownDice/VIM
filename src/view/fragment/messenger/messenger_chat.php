@@ -31,6 +31,8 @@
 		.chat .body {
 			height: 500px;
 			background: #9bbad8;
+			overflow-y: auto;
+			overflow-x: hidden;
 		}
 
 		.chat .footer {

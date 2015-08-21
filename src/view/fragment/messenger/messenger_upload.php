@@ -117,7 +117,7 @@
 	</style>
 
 	<div class="title">파일업로드</div>
-	<form action="" class="form_upload">
+	<form method="post" class="form_upload">
 		<div class="file_box">
 			<a class="btn_select_file"></a>
 			<p class="filename ">filename</p>
@@ -125,11 +125,11 @@
 		</div>
 		<div class="protect_box">
 			<p class=""><span>보호</span>하길 원하십니까?</p>
-			<div class="btn_toggle"> <input type="checkbox" class="check_protect"> </div>
+			<div class="btn_toggle"> <input type="checkbox" class="check_protect" name="protect"> </div>
 		</div>
 		<div class="sign_box">
 			<div class="sign_title"><span>서명</span>을 주입할 수 있습니다</div>
-			<input type="text" placeholder="signature">
+			<input type="text" placeholder="signature" name="signature">
 			<div class="pw_box">
 				<div class="pw_title">서명을 확인할 비밀번호를 입력하세요</div>
 				<input type="password" name="pw" placeholder="password">
@@ -143,6 +143,7 @@
 				<input type="submit" value="upload" class="hide">
 			</div>
 		</div>
+		<input type="hidden" name="user_info" class="user_info">
 	</form>
 
 </div>

@@ -62,6 +62,22 @@ class ChatServer extends WebSocketServer {
                 }
                 $response["img_type_white"] = base64_encode($image_data["white"]);
                 $response["img_type_yellow"] = base64_encode($image_data["yellow"]);
+            } else if ($message->type == "img") {
+                $flag = rand(0, 2);
+                $file_path = 'src/'.$message->file;
+                switch($flag) {
+                    case 0:
+                        $image_data = $IC->watermark($file_path, $node->user_info);
+                        break;
+                    case 1:
+                        $image_data = $IC->watermark($file_path, $node->ip);
+                        break;
+                    case 2:
+                        $image_data = $IC->watermark($file_path, $node->name);
+                        break;
+                }
+                var_dump($response);
+                $response["img"] = base64_encode($image_data);
             }
             $this->send($node, json_encode($response));
         }

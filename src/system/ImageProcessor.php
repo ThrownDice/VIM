@@ -29,8 +29,8 @@ class ImageProcessor {
             $height = $im_info[1];
             $extension = $im_info[2];
 
-            echo 'width : ', $width, '<br>';
-            echo 'height : ', $height, '<br>';
+            //echo 'width : ', $width, '<br>';
+            //echo 'height : ', $height, '<br>';
 
             /*if($width < 200 || $height < 200) {
                 //todo : too small size of image
@@ -341,6 +341,8 @@ class ImageProcessor {
                 imagepng($im);
                 $image_data = ob_get_contents();
                 ob_end_clean();
+
+                imagedestroy($im);
                 return $image_data;
             }
         }
@@ -351,6 +353,7 @@ class ImageProcessor {
     function uploadImage() {
 
         $target_dir = "upload/";
+
         $target_file = $target_dir . date('yyyymmddHHiissuu'). basename($_FILES["file"]["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -374,11 +377,11 @@ class ImageProcessor {
             $response["message"] = "Sorry, file already exists.";
         }
         // Check file size
-        if ($_FILES["file"]["size"] > 500000) {
+        /*if ($_FILES["file"]["size"] > 500000) {
             //echo "Sorry, your file is too large.";
             $uploadOk = 0;
             $response["message"] = "Sorry, your file is too large.";
-        }
+        }*/
         // Allow certain file formats
         if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif" ) {
