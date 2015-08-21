@@ -121,11 +121,11 @@
 		<div class="file_box">
 			<a class="btn_select_file"></a>
 			<p class="filename ">filename</p>
-			<input type="file" name="file" class="hide">
+			<input type="file" name="file" class="">
 		</div>
 		<div class="protect_box">
 			<p class=""><span>보호</span>하길 원하십니까?</p>
-			<div class="btn_toggle">toggle</div>
+			<div class="btn_toggle"> <input type="checkbox" class="check_protect"> </div>
 		</div>
 		<div class="sign_box">
 			<div class="sign_title"><span>서명</span>을 주입할 수 있습니다</div>

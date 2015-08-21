@@ -59,6 +59,39 @@
             }
         });
 
+        $('.btn_select_file').on('click', function() {
+            $('.chat').hide(0);
+            $('.upload').fadeIn(500);
+        });
+
+        $('.btn_upload').on('click', function() {
+
+            var fd = new FormData($('.fm_chat')[0]);
+
+            $.ajax({
+                url: '/messenger?action=upload'
+                type: 'post',
+                processData: false,
+                contentType: false,
+                data: fd
+            }).done(function( data ) {
+
+                var result = JSON.parse( data );
+                if(result.status === 'success' ) {
+
+
+                } else {
+                    console.log('upload fail');
+                }
+
+            }).fail(function( data) {
+                console.log('upload fail');
+            });
+
+
+
+        });
+
         $('.msg_container').perfectScrollbar();
 
     });
