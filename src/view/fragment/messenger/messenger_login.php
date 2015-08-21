@@ -17,6 +17,7 @@
 			width: 360px;
 			height: 590px;
 			background: url("view/img/messenger_login.jpg") no-repeat;
+
 		}
 
 		.login .form_box {
@@ -27,6 +28,7 @@
 		.form_box input {
 			width: 100%;
 			height: 30px;
+			color: #333;
 		}
 
 		.btn_login {

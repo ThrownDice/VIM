@@ -2,13 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7e47cfa-3325-4c5b-ad66-0a4301ca96e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer.php" afterPath="$PROJECT_DIR$/ChatServer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/upload/1515151508081717191910104343000000000000camera icon-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/upload/1515151508081717191911112525000000000000camera icon-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/upload/1515151508081717191912120909000000000000camera icon-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/upload/1515151508081717191912121717000000000000camera icon-green-h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Downloads.lnk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/img/home.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/img/home_background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/system/ChatServer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/SNS_Model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/fragment/validator.php" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\BAUHS93.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\COOPBL.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\LATINWD.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\NanumBrushScript-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\NanumGothic-ExtraBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\NanumGothicCoding-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\system\font\NanumGothicCoding-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\view\fragment\scanner.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\view\fragment\content.php" afterPath="$PROJECT_DIR$/src/view/fragment/home.php" />
+      <change type="MOVED" beforePath="C:\Users\TD\PhpstormProjects\VIM\src\view\template\tmpl_scanner.php" afterPath="$PROJECT_DIR$/src/view/template/tmpl_validator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/system/ImageProcessor.php" afterPath="$PROJECT_DIR$/src/system/ImageProcessor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Messenger.php" afterPath="$PROJECT_DIR$/src/controller/Messenger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Sns.php" afterPath="$PROJECT_DIR$/src/controller/Sns.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Validator.php" afterPath="$PROJECT_DIR$/src/controller/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/head/__head_messenger.php" afterPath="$PROJECT_DIR$/src/view/fragment/head/__head_messenger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/index.html" afterPath="$PROJECT_DIR$/src/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.php" afterPath="$PROJECT_DIR$/src/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/js/messenger.js" afterPath="$PROJECT_DIR$/src/view/js/messenger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_chat.php" afterPath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_chat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_login.php" afterPath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_upload.php" afterPath="$PROJECT_DIR$/src/view/fragment/messenger/messenger_upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/sns/sns_login.php" afterPath="$PROJECT_DIR$/src/view/fragment/sns/sns_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/fragment/sns/sns_post_pane.php" afterPath="$PROJECT_DIR$/src/view/fragment/sns/sns_post_pane.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/template/tmpl_default.php" afterPath="$PROJECT_DIR$/src/view/template/tmpl_default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" />
     </list>
     <ignored path="VIM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,21 +61,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5108014">
       <split-first>
         <leaf>
-          <file leaf-file-name="messenger.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="messenger.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view/js/messenger.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.345098">
-                  <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageProcessor.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ImageProcessor.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/system/ImageProcessor.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="120.17857">
-                  <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.28086838">
+                  <caret line="229" column="31" selection-start-line="229" selection-start-column="31" selection-end-line="229" selection-end-column="31" />
                   <folding>
                     <element signature="e#6#86#0#PHP" expanded="true" />
                   </folding>
@@ -91,8 +120,8 @@
           <file leaf-file-name="messenger_upload.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view/fragment/messenger/messenger_upload.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.392857">
-                  <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
+                <state vertical-scroll-proportion="-5.428571">
+                  <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -101,8 +130,8 @@
           <file leaf-file-name="messenger_chat.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/view/fragment/messenger/messenger_chat.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40197462">
-                  <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.7991859">
+                  <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -224,24 +253,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VIM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VIM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,14 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/template/tmpl_scanner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/system/Vim.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -553,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/fragment/messenger/messenger_upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857">
-          <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -564,16 +567,6 @@
         <state vertical-scroll-proportion="-1.6428572">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ImageProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="120.17857">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,17 +580,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/js/messenger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.345098">
-          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/fragment/messenger/messenger_chat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40197462">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.7991859">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/ImageProcessor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28086838">
+          <caret line="229" column="31" selection-start-line="229" selection-start-column="31" selection-end-line="229" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

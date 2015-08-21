@@ -27,7 +27,7 @@
 	<!-- main
 	========================================-->
 	<div id="main">
-		<?php require_once VIEWPATH."fragment".DS."scanner.php"?>
+		<?php require_once VIEWPATH."fragment".DS."validator.php"?>
 	</div>
 	<!-- //main
 	========================================-->

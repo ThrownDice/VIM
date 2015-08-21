@@ -28,15 +28,15 @@
 	<!-- main
 	========================================-->
 	<div id="main">
-		<?php require_once VIEWPATH."fragment".DS."content.php"?>
+		<?php require_once VIEWPATH."fragment".DS."home.php"?>
 	</div>
 	<!-- //main
 	========================================-->
 
 	<!-- footer
 	========================================-->
-	<div id="footer" class="border-red">
-		footer
+	<div id="footer" class="">
+
 	</div>
 	<!-- //footer
 	========================================-->

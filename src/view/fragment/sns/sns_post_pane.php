@@ -162,7 +162,7 @@
 				<input type="text" placeholder="What's on your mind?" class="text">
 			</div>
 			<div class="footer">
-				<a class="btn_post">post</a>
+				<a class="btn_post" >post</a>
 			</div>
 		</form>
 
@@ -172,18 +172,18 @@
 /**
  * Uncomment
  */
-//	$posts = $data["post_pane"];
-//	foreach($posts as $post) {
+	$posts = $data["post_pane"];
+	foreach($posts as $post) {
 //?>
 	<div class="post">
 		<div class="header">
 			<div class="person_box"><img src="view/img/fb_person.jpg" alt="" class=""></div>
-			<div class="username"><!--<?=$post["author"]?>--></div>
-			<div class="time"><!--<?=$post["time"]?>--></div>
+			<div class="username"><?=$post["author"]?></div>
+			<div class="time"><?=$post["time"]?></div>
 		</div>
 		<div class="body">
-			<div class="content"><!--<?=$post["content"]?>--></div>
-			<div class="img"><!--<?=$post["img"]?>--></div>
+			<div class="content"><?=$post["content"]?></div>
+			<div class="img"><?=$post["img"]?></div>
 		</div>
 		<div class="footer">
 			<a class="like">like</a>
@@ -191,9 +191,9 @@
 			<a class="share">share</a>
 		</div>
 	</div>
-<?//
-//	}
-//?>
+<?
+	}
+?>
 
 
 </div>

@@ -20,7 +20,8 @@ class Sns extends Controller {
 	}
 
 	function main() {
-		$data = null;
+		$sns_model =  new SNS_Model();
+		$data["post_pane"] = $sns_model->getAllPost();
 		$this->view->render("tmpl_sns", $data);
 	}
 

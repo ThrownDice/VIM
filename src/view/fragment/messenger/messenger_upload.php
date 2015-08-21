@@ -18,7 +18,6 @@
 			font-family: "돋움";
 			font-size: 0.9em;
 			color: #464646;
-			display : none;
 		}
 
 		.upload span {
@@ -121,11 +120,15 @@
 		<div class="file_box">
 			<a class="btn_select_file"></a>
 			<p class="filename ">filename</p>
-			<input type="file" name="file" class="">
+			<input type="file" name="file" class="hide">
 		</div>
 		<div class="protect_box">
 			<p class=""><span>보호</span>하길 원하십니까?</p>
+<<<<<<< HEAD
 			<div class="btn_toggle"> <input type="checkbox" class="check_protect" name="protect"> </div>
+=======
+			<div class="btn_toggle">toggle</div>
+>>>>>>> 8993e59da4f6f18525df5c4e288123d62d9d8b2c
 		</div>
 		<div class="sign_box">
 			<div class="sign_title"><span>서명</span>을 주입할 수 있습니다</div>
