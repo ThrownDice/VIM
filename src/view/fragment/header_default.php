@@ -24,7 +24,7 @@
 		}
 
 		.gnb {
-			width: 900px;
+			width: 800px;
 			margin: 0px auto;
 		}
 
