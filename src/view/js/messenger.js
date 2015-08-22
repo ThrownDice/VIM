@@ -83,11 +83,33 @@
                         } else {
                             image_data = data.img_type_white;
                         }
-                        var html = '<img src="data:image/png;base64,' + image_data + '">';
+                        var html = '';
+                        if(data.sender == email) {
+                            html = '<div class="node my">' +
+                                '<div class="node_header"> <img src="view/img/default_usr_icon.jpg" width="40">' + data.sender + ' </div> ' +
+                                '<div class="node_contents"> ' +  '<img src="data:image/png;base64,' + image_data + '">' + '</div>' +
+                                '</div>';
+                        } else {
+                            html = '<div class="node">' +
+                                '<div class="node_header"> <img src="view/img/default_usr_icon.jpg" width="40">' + data.sender + ' </div> ' +
+                                '<div class="node_contents"> ' +  '<img src="data:image/png;base64,' + image_data + '">' + '</div>' +
+                                '</div>';
+                        }
                         $('.body').append(html);
                     } else if(data.type == 'img') {
                         var image_data = data.img;
-                        var html = '<img src="data:image/png;base64,' + image_data + '">';
+                        var html = '';
+                        if(data.sender == email) {
+                            html = '<div class="node my">' +
+                                '<div class="node_header"> <img src="view/img/default_usr_icon.jpg" width="30">' + data.sender + ' </div> ' +
+                                '<div class="node_contents"> ' +  '<img src="data:image/png;base64,' + image_data + '">' + '</div>' +
+                                '</div>';
+                        } else {
+                            html = '<div class="node">' +
+                                '<div class="node_header"> <img src="view/img/default_usr_icon.jpg" width="30">' + data.sender + ' </div> ' +
+                                '<div class="node_contents"> ' +  '<img src="data:image/png;base64,' + image_data + '">' + '</div>' +
+                                '</div>';
+                        }
                         $('.body').append(html);
                     }
                 };
@@ -100,7 +122,7 @@
             $('.upload').fadeIn(500);
         });
 
-        //$('.chat .body').perfectScrollbar();
+        $('.chat .body').perfectScrollbar();
 
     });
 

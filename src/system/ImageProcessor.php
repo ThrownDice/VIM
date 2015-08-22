@@ -159,8 +159,8 @@ class ImageProcessor {
                         $contents = $this->cipher(substr($contents, 32), $key);
                     } else {
                         //todo : 키값이 일치 하지 않음
-                        echo '키값이 일치 하지 않음';
-                        return '';
+                        //echo '키값이 일치 하지 않음';
+                        return false;
                     }
                 }
 
@@ -597,6 +597,45 @@ class ImageProcessor {
         imagefilledellipse($im, $x1+$radius, $y2-$radius, $radius*2, $radius*2, $color);
         imagefilledellipse($im, $x2-$radius, $y2-$radius, $radius*2, $radius*2, $color);
     }
+
+    function isEncrypted($file_path) {
+
+        $im_info = getimagesize($file_path);
+
+        if($im_info) {
+
+            $width = $im_info[0];
+            $height = $im_info[1];
+            $extension = $im_info[2];
+            $im = imagecreatefrompng($file_path);
+
+            imagealphablending($im, true);
+            imagesavealpha($im, true);
+
+            //헤더 정보 추출
+            $header = '';
+            for($i=0; $i<13; $i++) {
+                $coordinate = $this->translate2Coordinate($i, $width, $height);
+                $header = $header.$this->extractInfoByPixel($im, $coordinate['x'], $coordinate['y']);
+            }
+
+            $bi_header_signature = substr($header, 0, 33);
+            $bi_content_length = substr($header, 33);
+
+            $header_signature = bindec($bi_header_signature);
+            $content_length = bindec($bi_content_length);
+
+            if($header_signature == $this->HEADER_SIGNATURE) {
+                return false;
+            } else if ($header_signature == $this->HEADER_SIGNATURE_WITH_ENCRYPT ){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    }
+
 
 }
 

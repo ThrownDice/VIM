@@ -8,7 +8,11 @@
 ?>
 <!-- content
 	========================================-->
+<<<<<<< HEAD:src/view/fragment/home.php
 <div class="home">
+=======
+<div class="content">
+>>>>>>> 080afda:src/view/fragment/content.php
 	<style scoped>
 		* {
 			overflow-x: hidden;
@@ -25,10 +29,17 @@
 		}
 
 		.background {
+<<<<<<< HEAD:src/view/fragment/home.php
 			margin: 0px auto;
 			height: 600px;
 			background: url("view/img/home_background.jpg");
 			background-size:100%;
+=======
+			margin: 20px 0;
+			height: 500px;
+			background: url("view/img/background.jpg") no-repeat;
+			background-size: 100%;
+>>>>>>> 080afda:src/view/fragment/content.php
 		}
 
 		.title {
@@ -37,17 +48,15 @@
 			top: 60%;
 			width: 90%;
 			text-align: center;
+<<<<<<< HEAD:src/view/fragment/home.php
 			font-size: 3.0em;
+=======
+			font-size: 3.5em;
+>>>>>>> 080afda:src/view/fragment/content.php
 			font-weight: bolder;
 		}
 
-		.subtitle {
-			margin: 0px auto;
-			position: relative;
-			top: 70%;
-			width: 80%;
-			text-align: center;
-		}
+
 
 
 

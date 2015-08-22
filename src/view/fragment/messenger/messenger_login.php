@@ -28,22 +28,35 @@
 		.form_box input {
 			width: 100%;
 			height: 30px;
+<<<<<<< HEAD
 			color: #333;
+=======
+			border-radius: 3px;
+			border: none;
+			font-size : 10pt;
+			padding : 0px 3px 0px 3px;
+		}
+
+		input.email {
+			border-bottom: 1px solid lightgray;
+>>>>>>> 080afda
 		}
 
 		.btn_login {
 			display: block;
-			background-color: #ccc;
 			-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
-			border-radius:6px;
-			color: #fff;
+			border-radius:3px;
+			color : white;
 			font-family: 'Oswald';
-			font-size: 20px;
+			font-size: 11px;
 			text-decoration: none;
 			cursor: pointer;
 			border:none;
 			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			background: #513b3c;
 		}
 
 		.submit_box {
@@ -64,7 +77,7 @@
 				<input type="password" name="password" placeholder="Password" class="password">
 			</div>
 			<div class="submit_box">
-				<a class="btn_login">Log in</a>
+				<a class="btn_login">Login</a>
 			</div>
 		</form>
 	</div>

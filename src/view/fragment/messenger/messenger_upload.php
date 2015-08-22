@@ -36,6 +36,7 @@
 		.file_box {
 			padding: 10px 0px;
 			border-bottom: 1px solid #DEDEDE;
+			text-align: center;
 		}
 
 		.file_box .btn_select_file {
@@ -119,8 +120,12 @@
 	<form method="post" class="form_upload">
 		<div class="file_box">
 			<a class="btn_select_file"></a>
+<<<<<<< HEAD
 			<p class="filename ">filename</p>
 			<input type="file" name="file" class="hide">
+=======
+			<input type="file" name="file" class="">
+>>>>>>> 080afda
 		</div>
 		<div class="protect_box">
 			<p class=""><span>보호</span>하길 원하십니까?</p>
